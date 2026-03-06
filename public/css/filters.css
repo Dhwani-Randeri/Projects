@@ -1,0 +1,110 @@
+#filters {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.filter {
+    text-align: center;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    opacity: 0.7;
+}
+.filter:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+.filter p {
+    font-size: 0.8rem;
+}
+.tax-info {
+    display: none;
+}
+.tax-toggle {
+    border: 1px solid black;
+    border-radius: 1rem;
+    height: 3.25rem;
+    padding: 1rem;
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+}
+.filter a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Filter Scroll System */
+#filters {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.filters-scroll {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    flex: 1;
+}
+.filters-scroll::-webkit-scrollbar {
+    display: none;
+}
+.filter {
+    flex: 0 0 auto;
+}
+.scroll-btn {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tax-toggle {
+    white-space: nowrap;
+}
+@media (max-width: 768px) {
+    #filters {
+        flex-wrap: wrap;
+    }
+    .filters-scroll {
+        order: 1;
+        width: 100%;
+    }
+    .left-btn {
+        order: 0;
+    }
+    .right-btn {
+        order: 2;
+    }
+    .tax-toggle {
+        order: 3;
+        width: 70%;
+        margin-left: 15%;
+        padding: 2rem;
+    }
+}
+@media (max-width: 400px) {
+    #filters {
+        flex-wrap: wrap;
+    }
+    .filters-scroll {
+        order: 1;
+        width: 100%;
+    }
+    .left-btn {
+        order: 0;
+    }
+    .right-btn {
+        order: 2;
+    }
+    .tax-toggle {
+        order: 3;
+        width: 70%;
+        margin-left: 1%;
+        padding: 2rem;
+        white-space: wrap;
+    }
+}

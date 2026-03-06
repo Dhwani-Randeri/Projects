@@ -1,0 +1,28 @@
+.wanderlust-marker {
+  width: 40px;       
+  height: 40px;      
+  background-color: red;
+  border-radius: 50%; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.4);
+}
+.wanderlust-marker i {
+  color: white;
+  font-size: 28px;   
+  pointer-events: none;
+}
+.wanderlust-marker::after {
+  content: '';
+  position: absolute;
+  bottom: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 14px solid transparent;
+  border-right: 14px solid transparent;
+  border-top: 14px solid red; 
+}
