@@ -192,12 +192,6 @@ This project is deployed using:
 
 -------------------------------------------------
 
-# 🚀 Live Demo Url
-
-https://your-render-url.onrender.com/listings
-
--------------------------------------------------
-
 # 🚀 Live Website
 
 [https://your-render-url.onrender.com/listings](https://projects-mots.onrender.com/listings)
