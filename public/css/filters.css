@@ -102,9 +102,22 @@
     }
     .tax-toggle {
         order: 3;
-        width: 70%;
-        margin-left: 1%;
+        width: 100%;
+        margin-left: 16%;
+        margin-right: 16%;
         padding: 2rem;
         white-space: wrap;
+        margin-top: 0.8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .tax-toggle .form-check {
+        font-size: 0.85rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .tax-toggle .form-check label {
+        text-align: center;
     }
 }
